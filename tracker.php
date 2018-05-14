@@ -320,7 +320,7 @@ $rows = json_decode($content, true);
                                                     echo '<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                                         <div class="single-item">
                                             <div class="s-product-img">
-                                                <a href="product.php?pid='.$productId .'">
+                                                <a href="product.php?pid='.$productId .' ">
                                                     <img alt="" src="img/product/' .  $productId . '.jpg" class="primary-image">
                                                 </a>
                                                 <div class="price-rate">
@@ -364,7 +364,8 @@ $rows = json_decode($content, true);
                                                 </div>
                                             </div>
                                             <div class="product-title">
-                                                <a href="product.php?pid='.$productId .'">' . $productName . '</a>
+                                              
+                                                 <a href="product.php?pid='.$productId .'&categoryId='.$categoryId.'   ">' . $productName . '</a>
                                             </div>
                                         </div>
                                     </div>';

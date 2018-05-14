@@ -350,10 +350,7 @@ $conn->close();
                             <ul class="nav_menu" id="menu-top-menu">
                                 <?php
                                 if(isset($_SESSION['session_user'])) {
-                                    echo '<li class="menu-item  first"><a href="my-account.php?uid=' . $_SESSION['session_id'] . '">My Account</a></li>
-                                <li class="menu-item"><a href="wishlist.php">My Wishlist</a></li>
-                                <li class="menu-item"><a href="shopping-cart.php">Shopping Cart</a></li>
-                                <li class="menu-item"><a href="checkout.php">Checkout</a></li>
+                                    echo '
                                 <li class="menu-item"><a href="logout.php">Logout</a></li>
                                 ';
                                 } else {
