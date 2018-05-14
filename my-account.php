@@ -164,7 +164,7 @@ $conn->close();
                                                                     </a>
                                                                 </li>
                                                                 <li class="menu-item active">
-                                                                    <a class="item_link" href="shop.php?id=4">
+                                                                    <a class="item_link" href="shop.php?id=1">
 															<span class="link_content">
 																<span class="link_text">Shop</span>
 															</span>

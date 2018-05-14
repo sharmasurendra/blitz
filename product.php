@@ -520,7 +520,7 @@ $conn->close();
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="breadcrumbs all-product-view-mode">
-                            <a href="index.php">Home</a><span class="separator">&gt;</span><span><a href="shop.php?id=4"> Shop</a></span><span class="separator">&gt;</span><span>Product</span>
+                            <a href="index.php">Home</a><span class="separator">&gt;</span><span><a href="shop.php?id=2"> Shop</a></span><span class="separator">&gt;</span><span>Product</span>
                         </div>
                     </div>
                 </div>

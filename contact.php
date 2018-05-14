@@ -259,9 +259,9 @@ session_start();
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="single-member">
                         <div class="member-info">
-                            <h4>Cold Stone Coffee</h4>
-                            <h5><img src="img/contact/callblack.jpg"/></h5><h3>(121)987-1098</h3>
-                            <h5><img src="img/contact/mailpink.jpg"/>renu.parameswaran@sjsu.edu</h5>
+                            <h4>Offbeat Jewels</h4>
+                            <h5><img src="img/contact/callblack.jpg"/></h5><h3>(925)395-7455</h3>
+                            <h5><img src="img/contact/mailpink.jpg"/>surendra.sharma@sjsu.edu</h5>
                         </div>
                     </div>
                 </div>
@@ -269,9 +269,9 @@ session_start();
                     <div class="single-member">
                         <div class="single-member">
                             <div class="member-info">
-                                <h4>Fashionista</h4>
-                                <h5><img src="img/contact/callblack.jpg"/></h5><h3>(122)989-1099</h3>
-                                <h5><img src="img/contact/mailpink.jpg"/>vivek.lakshmanan@sjsu.edu</h5>
+                                <h4>Progresswithus</h4>
+                                <h5><img src="img/contact/callblack.jpg"/></h5><h3>(650)235-6831</h3>
+                                <h5><img src="img/contact/mailpink.jpg"/>vikas.kodwani@sjsu.edu</h5>
                             </div>
                         </div>
                     </div>
@@ -279,47 +279,48 @@ session_start();
                 <div class="col-lg-4 col-md-4 col-sm-4">
                     <div class="single-member">
                         <div class="single-member">
-                            <div class="member-info">
+                            <!-- <div class="member-info">
                                 <h4>Home Decors</h4>
                                 <h5><img src="img/contact/callblack.jpg"/></h5><h3>(123)988-1100</h3>
                                 <h5><img src="img/contact/mailpink.jpg"/>smitha.venkatesh@sjsu.edu</h5>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="team-member">
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-member">
                             <div class="single-member">
-                                <div class="member-info">
+                               <!--  <div class="member-info">
                                     <h4>Ice Modders</h4>
                                     <h5><img src="img/contact/callblack.jpg"/></h5><h3>(124)990-1101</h3>
                                     <h5><img src="img/contact/mailpink.jpg"/>karthik.nair@sjsu.edu</h5>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="single-member">
                             <div class="single-member">
-                                <div class="member-info">
+                                <!-- <div class="member-info">
                                     <h4>KadArt</h4>
                                     <h5><img src="img/contact/callblack.jpg"/></h5><h3>(125)991-1102</h3>
                                     <h5><img src="img/contact/mailpink.jpg"/>chaitanya.kademane@sjsu.edu</h5>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <div class="single-member">
                             <div class="single-member">
-                                <div class="member-info">
+                               <!--  <div class="member-info">
                                     <h4>MtvConnect</h4>
                                     <h5><img src="img/contact/callblack.jpg"/></h5><h3>(126)992-1103</h3>
                                     <h5><img src="img/contact/mailpink.jpg"/>aaditya.deowanshi@sjsu.edu</h5>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
