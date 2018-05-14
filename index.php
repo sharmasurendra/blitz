@@ -189,23 +189,12 @@ unset($_POST);
     </script>
 </head>
 <body class="home">
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
 <header>
     <div class="header-container">
         <div class="container">
             <div class="top-bar">
                 <div class="topbar-content">
-<!--                     <div class="header-email widget">
-                        <i class="fa fa-envelope"></i><strong>Email:</strong> <a
-                            href="mailto:viveklakshmanan@live.com ">spartan-deals@live.com </a>
-                    </div>
- -->                    
- <!-- <div class="header-phone widget"><i class="fa  fa-phone"></i><strong>Phone:</strong><a
-                            href="tel:+16692924707"> (669) 272-4707</a></div>
-  -->                   <div class="top-menu widget">
+                <div class="top-menu widget">
                         <div class="menu-top-menu-container">
                             <ul class="nav_menu" id="menu-top-menu">
                                 <?php
@@ -264,12 +253,12 @@ unset($_POST);
 															</span>
                                                                     </a>
                                                                 </li>
-<!--                                                                 <li class="menu-item megamenu_list">
-                                                                    <a class="item_link" href="shop.php?id=4">
+                                                                <li class="menu-item megamenu_list">
+                                                                    <a class="item_link" href="shop.php?id=1">
 															<span class="link_content">
 																<span class="link_text">Shop</span>
 															</span>
- -->                                                                    </a>
+                                                                    </a>
                                                                 </li>
                                                                 <li class="menu-item">
                                                                     <a class="item_link" href="tracker.php?id=1&categoryId=1">

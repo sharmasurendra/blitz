@@ -167,15 +167,15 @@ session_start();
 															</span>
                                                                     </a>
                                                                 </li>
-<!--                                                                 <li class="menu-item">
-                                                                    <a class="item_link" href="shop.php?id=4">
+                                                                <li class="menu-item">
+                                                                    <a class="item_link" href="shop.php?id=1">
 															<span class="link_content">
 																<span class="link_text">Shop</span>
-															</span> -->
+															</span> 
                                                                     </a>
                                                                 </li>
                                                                 <li class="menu-item">
-                                                                    <a class="item_link" href="tracker.php?id=4">
+                                                                    <a class="item_link" href="tracker.php?id=1&categoryId=1">
 															<span class="link_content">
 																<span class="link_text">Tracker</span>
 															</span>

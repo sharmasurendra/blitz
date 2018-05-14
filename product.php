@@ -403,15 +403,15 @@ $conn->close();
 															</span>
                                                                     </a>
                                                                 </li>
-<!--                                                                 <li class="menu-item active">
-                                                                    <a class="item_link" href="shop.html?id=4">
+                                                                 <li class="menu-item active">
+                                                                    <a class="item_link" href="shop.php?id=1">
 															<span class="link_content">
 																<span class="link_text">Shop</span>
 															</span>
                                                                     </a>
                                                                 </li>
- -->                                                                <li class="menu-item">
-                                                                    <a class="item_link" href="tracker.php?id=4">
+                                                                 <li class="menu-item">
+                                                                    <a class="item_link" href="tracker.php?id=1&categoryId=1">
 															<span class="link_content">
 																<span class="link_text">Tracker</span>
 															</span>
