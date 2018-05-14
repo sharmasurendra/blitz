@@ -345,12 +345,6 @@ $conn->close();
         <div class="container">
             <div class="top-bar">
                 <div class="topbar-content">
-                    <div class="header-email widget">
-                        <i class="fa fa-envelope"></i><strong>Email:</strong> <a
-                            href="mailto:viveklakshmanan@live.com ">spartandeals6@gmail.com </a>
-                    </div>
-                    <div class="header-phone widget"><i class="fa  fa-phone"></i><strong>Phone:</strong><a
-                            href="tel:+16692924707"> (669) 272-4707</a></div>
                     <div class="top-menu widget">
                         <div class="menu-top-menu-container">
                             <ul class="nav_menu" id="menu-top-menu">
@@ -387,7 +381,7 @@ $conn->close();
                             <div class="global-row">
                                 <div class="global-cell">
                                     <div class="logo">
-                                        <a href="index.php" title="Market-Place"><img src="img/logo/logo-1.png"
+                                        <a href="index.php" title="Market-Place"><img src="img/logo/blitz-2.png"
                                                                                        alt="logo image"></a>
                                     </div>
                                 </div>
