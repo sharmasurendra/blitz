@@ -619,7 +619,7 @@ $conn->close();
             }
             echo '<span>  ' . $current_rating . ' out of 5 stars</span>';
             echo '<span>&nbsp; &nbsp; | &nbsp; &nbsp;' . $row['Comments'] . '...</span></div>';
-            echo '<div> <span>By: ' . $row['UserName'] . '   | on May 18th 2017</span></div>';
+            echo '<div> <span>By: ' . $row['UserName'] . '   </span></div>';
             echo '<div style="font-size: 30px; margin-bottom: 40px; margin-top: 10px;">'. $row['Comments'] .'</div>';
 
         }
