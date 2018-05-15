@@ -424,8 +424,6 @@ unset($_POST);
             <div class="col-md-7 col-sm-6">
                 <div class="banner-content-padding">
                     <div class="banner-content">
-                        
-                        
                         <p><a href="shop.php?id=1" class="button">VIEW COLLECTION</a></p>
                     </div>
                 </div>
@@ -438,7 +436,7 @@ unset($_POST);
         <div class="row">
             <div class="section-title">
                 <div class="col-md-12">
-                    <h3><span>TOP PRODUCTS</span>
+                    <h3><span>TOP PRODUCTS / SERVICES</span>
                         <i class="cross-icon"><i></i></i>
                     </h3>
                 </div>
