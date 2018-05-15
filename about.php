@@ -239,7 +239,7 @@ session_start();
 <!-- main-container full-width -->
 <!--  HEADER-AREA END-->
 <div align="center" class="row">
-    <img  align="center" alt="about-us" src="img/about/spartandealsnew.JPG">
+    <img  align="center" alt="about-us" src="img/about/about-us.jpeg">
 </div>
 
 
