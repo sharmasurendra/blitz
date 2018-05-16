@@ -29,7 +29,7 @@ if(isset($getId)) {
     if($getId == 1) {
         $content = get_data('https://offbeatjewels.herokuapp.com/src/product_marketplace.php');
     } else if($getId == 2) {
-        $content = get_data('https://vikaskodwani.000webhostapp.com/includes/product_marketplace.php');
+        $content = get_data('http://progresswithus.esy.es/includes/product_marketplace.php');
     } 
 }
 

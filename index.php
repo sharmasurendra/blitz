@@ -366,7 +366,7 @@ unset($_POST);
                                             if($productId[0]==1){
                                             $content = get_data('https://offbeatjewels.herokuapp.com/src/product_marketplace.php');
                                             } else if($productId[0] == 2) {
-                                            $content = get_data('https://vikaskodwani.000webhostapp.com/includes/product_marketplace.php');
+                                            $content = get_data('http://progresswithus.esy.es/includes/product_marketplace.php');
                                             } 
                                             $rows = json_decode($content, true);
 
