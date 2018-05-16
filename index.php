@@ -452,10 +452,10 @@ unset($_POST);
                                 <a href="index.php#all" aria-controls="all" role="tab" data-toggle="tab">All</a>
                             </li>
                             <li data-input="4" role="presentation">
-                                <a href="index.php#cold" aria-controls="cold" role="tab" data-toggle="tab">OffBeat Jewels</a>
+                                <a href="index.php#OffBeatJewels" aria-controls="OffBeatJewels" role="tab" data-toggle="tab">OffBeat Jewels</a>
                             </li>
                             <li data-input="6" role="presentation">
-                                <a href="index.php#fashion" aria-controls="fashion" role="tab" data-toggle="tab">Progresswithus</a>
+                                <a href="index.php#Progresswithus" aria-controls="Progresswithus" role="tab" data-toggle="tab">Progresswithus</a>
                             </li>
 
                         </ul>
@@ -959,28 +959,28 @@ LIMIT 0 , 5;";
                         </div>
                     </div>
 
-                    <div class="tab-pane fade in" id="cold">
+                    <div class="tab-pane fade in" id="OffBeatJewels">
                         <div class="tabbable">
                             <ul class="nav nav-tabs text-center fix">
                                 <li role="presentation" class="active">
-                                    <a href="index.php#cold1" aria-controls="cold1" role="tab" data-toggle="tab">Most
+                                    <a href="index.php#OffBeatJewels1" aria-controls="OffBeatJewels1" role="tab" data-toggle="tab">Most
                                         Visited</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="index.php#cold2" aria-controls="cold2" role="tab"
+                                    <a href="index.php#OffBeatJewels2" aria-controls="OffBeatJewels2" role="tab"
                                        data-toggle="tab">Recent</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="index.php#cold3" aria-controls="cold3" role="tab" data-toggle="tab">Top
+                                    <a href="index.php#OffBeatJewels3" aria-controls="OffBeatJewels3" role="tab" data-toggle="tab">Top
                                         Rated</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="index.php#cold4" aria-controls="cold4" role="tab" data-toggle="tab">Top
+                                    <a href="index.php#OffBeatJewels4" aria-controls="OffBeatJewels4" role="tab" data-toggle="tab">Top
                                         Commented</a>
                                 </li>
                             </ul>
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="cold1">
+                                <div role="tabpanel" class="tab-pane fade in active" id="OffBeatJewels1">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
                                         $id = 1;
@@ -1103,14 +1103,14 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
 
 
 
-                                <div role="tabpanel" class="tab-pane fade in " id="cold2">
+                                <div role="tabpanel" class="tab-pane fade in " id="OffBeatJewels2">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
-                                        if(!isset($_COOKIE['cold'])) {
+                                        if(!isset($_COOKIE['OffBeatJewels'])) {
                                             echo "<p class='text-center'> No Data to display</p>";
                                         }
-                                        if(isset($_COOKIE['cold'])) {
-                                        $prod = $_COOKIE['cold'];
+                                        if(isset($_COOKIE['OffBeatJewels'])) {
+                                        $prod = $_COOKIE['OffBeatJewels'];
                                         $prod = stripslashes($prod); // string is stored with escape double quotes
                                         $prod = json_decode($prod, true);
                                         $first = $prod['1st'];
@@ -1228,14 +1228,12 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
                                         <!-- single group end -->
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade in " id="cold3">
+                                <div role="tabpanel" class="tab-pane fade in " id="OffBeatJewels3">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
 
-                                        $id = 4;
-
-
-                                        $sql = "SELECT avg(Rating) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >" . $id*1000 . " and B.ProductId < ". ($id + 1)*1000 . " group by A.ProductId
+                                        $id = 1;
+                                        $sql = "SELECT avg(Rating) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >1 and B.ProductId < 15"  . " group by A.ProductId
                                         order by AVG(Rating) desc Limit 5";
                                         $result = $conn->query($sql);
                                         if ($result->num_rows > 0) {
@@ -1343,13 +1341,14 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
                                         <!-- single group end -->
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade in " id="cold4">
+                                <div role="tabpanel" class="tab-pane fade in " id="OffBeatJewels4">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
-                                        $id = 4;
-                                        $sql = "Select count(*) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >
-                                        " . $id*1000 . " and B.ProductId < ". ($id + 1)*1000 . " group by A.ProductId
-                                        order by count(*) desc LIMIT 5";
+                                        $id = 1;
+                                        $sql = "SELECT count(*) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >1 and B.ProductId < 15"  . " group by A.ProductId
+                                        order by count(*) desc Limit 5";
+
+
                                         $result = $conn->query($sql);
                                         if ($result->num_rows > 0) {
                                         // output data of each row
@@ -1459,27 +1458,27 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="fashion">
+                    <div class="tab-pane fade" id="Progresswithus">
                         <div class="tabbable">
                             <ul class="nav nav-tabs text-center fix">
                                 <li role="presentation" class="active">
-                                    <a href="index.php#fashion1" aria-controls="fashion1" role="tab" data-toggle="tab">Most
+                                    <a href="index.php#Progresswithus1" aria-controls="Progresswithus1" role="tab" data-toggle="tab">Most
                                         Visited</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="index.php#fashion2" aria-controls="fashion2" role="tab" data-toggle="tab">Recent</a>
+                                    <a href="index.php#Progresswithus2" aria-controls="Progresswithus2" role="tab" data-toggle="tab">Recent</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="index.php#fashion3" aria-controls="fashion3" role="tab" data-toggle="tab">Top
+                                    <a href="index.php#Progresswithus3" aria-controls="Progresswithus3" role="tab" data-toggle="tab">Top
                                         Rated</a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="index.php#fashion4" aria-controls="fashion4" role="tab" data-toggle="tab">Top
+                                    <a href="index.php#Progresswithus4" aria-controls="Progresswithus4" role="tab" data-toggle="tab">Top
                                         Commented</a>
                                 </li>
                             </ul>
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="fashion1">
+                                <div role="tabpanel" class="tab-pane fade in active" id="Progresswithus1">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
                                         $id = 6;
@@ -1596,14 +1595,14 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
                                     </div>
                                 </div>
                                 <!--/ fashioninsta item End -->
-                                <div role="tabpanel" class="tab-pane fade in " id="fashion2">
+                                <div role="tabpanel" class="tab-pane fade in " id="Progresswithus2">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
-                                        if(!isset($_COOKIE['fashion'])) {
+                                        if(!isset($_COOKIE['Progresswithus'])) {
                                             echo "<p class='text-center'> No Data to display</p>";
                                         }
-                                        if(isset($_COOKIE['fashion'])) {
-                                        $prod = $_COOKIE['fashion'];
+                                        if(isset($_COOKIE['Progresswithus'])) {
+                                        $prod = $_COOKIE['Progresswithus'];
                                         $prod = stripslashes($prod); // string is stored with escape double quotes
                                         $prod = json_decode($prod, true);
                                         $first = $prod['1st'];
@@ -1722,13 +1721,17 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
                                     </div>
                                 </div>
                                 <!--/ fashioninsta item End -->
-                                <div role="tabpanel" class="tab-pane fade in " id="fashion3">
+                                <div role="tabpanel" class="tab-pane fade in " id="Progresswithus3">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
-                                        $id = 6;
-                                        $sql = "SELECT avg(Rating) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >
-                                        " . $id*1000 . " and B.ProductId < ". ($id + 1)*1000 . " group by A.ProductId
-                                        order by AVG(Rating) desc Limit 5";
+                                        $id = 2;
+                                        // $sql = "SELECT avg(Rating) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >
+                                        // " . $id*1000 . " and B.ProductId < ". ($id + 1)*1000 . " group by A.ProductId
+                                        // order by AVG(Rating) desc Limit 5";
+
+ $sql = "SELECT avg(Rating) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >13 and B.ProductId < 30"  . " group by A.ProductId
+                                        order by avg(Rating) desc Limit 5";
+
                                         $result = $conn->query($sql);
                                         if ($result->num_rows > 0) {
                                         // output data of each row
@@ -1836,13 +1839,18 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
                                     </div>
                                 </div>
                                 <!--/ fashioninsta item End -->
-                                <div role="tabpanel" class="tab-pane fade in " id="fashion4">
+                                <div role="tabpanel" class="tab-pane fade in " id="Progresswithus4">
                                     <div class="product-owl-active  indicator-style">
                                         <?php
-                                        $id = 6;
-                                        $sql = "Select count(*) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >
-                                        " . $id*1000 . " and B.ProductId < ". ($id + 1)*1000 . " group by A.ProductId
-                                        order by count(*) desc LIMIT 5";
+                                        $id = 2;
+                                        // $sql = "Select count(*) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >
+                                        // " . $id*1000 . " and B.ProductId < ". ($id + 1)*1000 . " group by A.ProductId
+                                        // order by count(*) desc LIMIT 5";
+
+ $sql = "SELECT count(*) , B.* from Review A , Product B WHERE A.ProductId = B.ProductId and B.ProductId >13 and B.ProductId < 30"  . " group by A.ProductId
+                                        order by count(*) desc Limit 5";
+
+
                                         $result = $conn->query($sql);
                                         if ($result->num_rows > 0) {
                                         // output data of each row
