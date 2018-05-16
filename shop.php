@@ -532,7 +532,7 @@ if(! $results ) {
                             </div>
                         </div>
                         <div class="quick-add-to-cart">
-                            <form class="cart" action="shop.html?id=' . $getId .'" method="post">
+                            <form class="cart" action="shop.php?id=' . $getId .'" method="post">
                                 <div class="numbers-row">
                                     <input type="number" id="french-hens" value="2" name="cart-quantity">
                                 </div>
@@ -557,7 +557,7 @@ if(! $results ) {
 
 <div id="login-modal" class="modal fade login" aria-labelledby="myModalLabel" tabindex="-1" role="dialog">
     <div class="modal-dialog login animated">
-        <form id="login-form" action="index.html" method="POST">
+        <form id="login-form" action="index.php" method="POST">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" onClick="window.location.reload()" data-dismiss="modal"
@@ -678,7 +678,7 @@ if(! $results ) {
 
 <div id="sign-modal" class="modal fade login" aria-labelledby="myModalLabel" tabindex="-1" role="dialog">
     <div class="modal-dialog login animated">
-        <form id="sign-form" action="index.html" method="POST">
+        <form id="sign-form" action="index.php" method="POST">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" onClick="window.location.reload()" data-dismiss="modal"
