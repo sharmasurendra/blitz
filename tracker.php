@@ -44,7 +44,7 @@ $rows = json_decode($content, true);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Spartan Deals</title>
+    <title>Blitz Services & Products</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-signin-client_id"
@@ -141,16 +141,9 @@ $rows = json_decode($content, true);
                             <ul class="nav_menu" id="menu-top-menu">
                                 <?php
                                 if(isset($_SESSION['session_user'])) {
-                                    echo '
-                                <li class="menu-item"><a href="logout.php">Logout</a></li>
-                                ';
+                                    echo ' ';
                                 } else {
-                                    echo '
-                                <li class="menu-item"><a href="#" data-toggle="modal" data-target="#sign-modal">Sign
-                                    up</a></li>
-                                <li class="menu-item"><a href="#" data-toggle="modal"
-                                                         data-target="#login-modal">Login</a></li>
-                                ';
+                                    echo ' ';
                                 }
 
                                 ?>

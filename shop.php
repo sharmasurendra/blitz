@@ -114,7 +114,7 @@ if(! $results ) {
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Spartan Deals</title>
+    <title>Blitz Services & Products</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-signin-client_id"
@@ -487,7 +487,7 @@ if(! $results ) {
                             </nav>
                         </div>
                     </div>
-                    <div class="copyright-info"> Copyright &copy; 2017 <a href="#">Spartan Deals </a>
+                     <div class="copyright-info"> Copyright &copy; 2018 <a href="#">Blitz Services & Products </a>
                         All Rights Reserved
                     </div>
                      <div class="copyright-info">** This is for SJSU Course CMPE-272 purpose only. Images are taken
