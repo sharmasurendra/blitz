@@ -471,10 +471,10 @@ unset($_POST);
                                     <a href="index.php#all1" aria-controls="all1" role="tab" data-toggle="tab">Most
                                         Visited</a>
                                 </li>
-                                <li role="presentation">
+                                <!-- <li role="presentation">
                                     <a href="index.php#all2" aria-controls="all2" role="tab"
                                        data-toggle="tab">Recent</a>
-                                </li>
+                                </li> -->
                                 <li role="presentation">
                                     <a href="index.php#all3" aria-controls="all3" role="tab" data-toggle="tab">Top
                                         Rated</a>
@@ -614,6 +614,13 @@ LIMIT 0 , 5;";
                                         $third = $prod['3rd'];
                                         $fourth = $prod['4th'];
                                         $fifth = $prod['5th'];
+
+                                        // echo $first.'<br>';
+                                        // echo $second.'<br>';
+                                        // echo $third.'<br>';
+                                        // echo $fourth.'<br>';
+                                        // echo $fifth.'<br>';
+
 
                                         $sql = "SELECT * FROM `Product` where Productid IN ('" . $first . "','" .
                                         $second . "','" . $third . "','" . $fourth . "','" . $fifth . "') LIMIT 5";
@@ -966,10 +973,10 @@ LIMIT 0 , 5;";
                                     <a href="index.php#OffBeatJewels1" aria-controls="OffBeatJewels1" role="tab" data-toggle="tab">Most
                                         Visited</a>
                                 </li>
-                                <li role="presentation">
+                               <!--  <li role="presentation">
                                     <a href="index.php#OffBeatJewels2" aria-controls="OffBeatJewels2" role="tab"
                                        data-toggle="tab">Recent</a>
-                                </li>
+                                </li> -->
                                 <li role="presentation">
                                     <a href="index.php#OffBeatJewels3" aria-controls="OffBeatJewels3" role="tab" data-toggle="tab">Top
                                         Rated</a>
@@ -1465,9 +1472,9 @@ WHERE ProductId > 1 and ProductId < 15 ORDER BY Most.counter DESC
                                     <a href="index.php#Progresswithus1" aria-controls="Progresswithus1" role="tab" data-toggle="tab">Most
                                         Visited</a>
                                 </li>
-                                <li role="presentation">
+                               <!--  <li role="presentation">
                                     <a href="index.php#Progresswithus2" aria-controls="Progresswithus2" role="tab" data-toggle="tab">Recent</a>
-                                </li>
+                                </li> -->
                                 <li role="presentation">
                                     <a href="index.php#Progresswithus3" aria-controls="Progresswithus3" role="tab" data-toggle="tab">Top
                                         Rated</a>
